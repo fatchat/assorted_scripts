@@ -43,7 +43,7 @@ class TableGenerator:
             print("Not connected")
             return
         insert_str = self.insert_str_base + "("
-        insert_str += ",".join(values)
+        insert_str += ",".join([str(x) for x in values])
         insert_str += ")"
         if (self.verbose):
             print("<insert string> " + insert_str)
