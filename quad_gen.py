@@ -5,7 +5,7 @@ import argparse
 import tablegenerator
 import random
 # global vars
-dbname = "TimeSeries"
+dbname = "ArbitData"
 # command-line arguments
 parser = argparse.ArgumentParser("quadratic generator")
 parser.add_argument("-a", type=float, default=0, help="constant coefficient")
